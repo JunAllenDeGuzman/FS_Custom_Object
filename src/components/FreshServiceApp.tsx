@@ -1,27 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import {
   Form,
   InputGroup,
   Container,
   Row,
-  Col,
-  Card,
   Button,
 } from "react-bootstrap";
 
-interface CustomObject {
-  id: number;
-  name: string;
-  description: string;
-}
-
 const FreshServiceApp: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [data, setData] = useState<CustomObject[]>([]);
-  const [filteredData, setFilteredData] = useState<CustomObject[]>([]);
   const [url, setUrl] = useState([]);
   const FRESHSERVICE_DOMAIN = "alpsdev-helpdesk.freshservice.com";
   const API_KEY = "WAMWIqJNrkfyavLB4jCG";

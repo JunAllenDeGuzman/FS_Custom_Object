@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState, useEffect } from "react";
-import { Card, Button, Form, Spinner } from "react-bootstrap";
-import { Plus, Trash2, RefreshCw, LinkIcon } from "lucide-react";
+import { Card, Button, Spinner } from "react-bootstrap";
+import { RefreshCw, LinkIcon } from "lucide-react";
 
 export type ObjectData = {
   id: number;
@@ -22,7 +22,6 @@ const FreshserviceObjectData: React.FC = () => {
   //   name: "",
   //   description: "",
   // });
-  const [getRecords, setGetRecords] = useState<any[]>([]);
   const [recrodData, setRecordData] = useState<RecordData[]>([]);
 
   // Replace with your Freshservice domain and API key
